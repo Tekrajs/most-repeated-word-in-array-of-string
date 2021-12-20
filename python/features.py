@@ -1,12 +1,44 @@
 class Features:
 
+    """
+    A class that represents features
+    ...
+
+    Attributes
+    ----------
+    top_features_number: number
+        maximum number of features that can be selected
+
+    possible_features: array
+        Array of features that can be taken into consideration for the selection pordedure of requested feature
+
+    features_requests: array
+       Array of requests feeded to the algorithms to find out the most needed features
+
+    Methods
+    ---------
+    get_top_features():
+
+    """
+
     def __init__(self, topFeaturesNumber, possibleFeatures, featuresRequests) -> None:
+        """
+        Constructs all the necessary attributes for the person object.
+
+        """
+
         self.top_features_number = topFeaturesNumber
         self.possible_features = possibleFeatures
         self.features_requests = featuresRequests
 
-    # Function to calculate the most frequently requested feature.
     def get_top_features(self):
+        """
+        Function to calculate the most frequently requested feature.
+
+        Prints the result of most requested features present in possible features
+        and all those requests asking those features
+
+        """
 
         # keywords count are counts of word appearing in each sentence and that exist in given possible features
         keywords_count = {}
