@@ -5,7 +5,7 @@ class Features:
         self.possible_features = possibleFeatures
         self.features_requests = featuresRequests
 
-# Function to calculate the most frequently requested feature.
+    # Function to calculate the most frequently requested feature.
     def get_top_features(self):
 
         # keywords count are counts of word appearing in each sentence and that exist in given possible features
